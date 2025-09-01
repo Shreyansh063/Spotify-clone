@@ -1,6 +1,6 @@
 
 async function getsongs() {
-    let a = await fetch("http://127.0.0.1:5501/Spotify%20clone/Spotify%20songs/");
+    let a = await fetch("http://127.0.0.1:5501/Spotify%20clone/");
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -32,7 +32,7 @@ function secondsToMinutesSeconds(seconds){
 }
 
 const Playmusic=(track)=>{
-    audio.src = "/Spotify clone/Spotify songs/"+track;
+    audio.src = "/Spotify clone/"+track;
     audio.play();    
 }
 
@@ -274,3 +274,4 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 main();
+
