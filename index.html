@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="icon" href="./favicon.ico">
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="hamburger">☰</div>
+      <div class="left border" id="mobileMenu">
+        <div class="home">
+          <ul>
+            <!-- <li><div class="logo"><img src="logo.svg" alt="logo"></div></li> -->
+            <li><img class="logo" src="logo.svg" alt="logo" /></li>
+            <li><img src="home.svg" alt="home" />Home</li>
+            <li><img src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+
+        <div class="library">
+          <div class="heading">
+            <img src="library.svg" alt="Library" /><span>Your Library</span>
+          </div>
+          <div class="songlist">
+            <ul>
+              
+            </ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/"
+                ><span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                ><span>Safety &amp; Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+            <div>
+              <a
+                draggable="false"
+                href="https://www.spotify.com/legal/cookies-policy/"
+                target="_blank"
+                rel="noopener"
+                ><span>Cookies</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right border">
+        <div class="header">
+          <div class="nav">
+            <svg
+              width="30"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="12" fill="#090909" />
+              <path
+                d="M14.5 7L10 12L14.5 17"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              width="30"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="12" fill="#090909" />
+              <path
+                d="M9.5 7L14 12L9.5 17"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          
+          <div class="buttons">
+            <button class="signup">Sign Up</button>
+            <button class="login">Login</button>
+          </div>
+        </div>
+
+        <div class="spotifyplaylist">
+          <h2>Spotify Playlist</h2>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="playbtn">
+                <img src="play_button.svg" alt="playbtn" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02786a26c64ff6b997a9552910"
+                alt=""
+              />
+              <h4>At Peace</h4>
+              <p>Karan Aujla, ikky</p>
+            </div>
+            <div class="card">
+              <div class="playbtn">
+                <img src="play_button.svg" alt="playbtn" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e026d9a2050e82ce05424dca5aa"
+                alt=""
+              />
+              <h4>Shree Hanuman Chalisa</h4>
+              <p>Hariharan</p>
+            </div>
+            <div class="card">
+              <div class="playbtn">
+                <img src="play_button.svg" alt="playbtn" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02c43c9a46474ceda8332fa723"
+                alt=""
+              />
+              <h4>Chikitu(From "Coolie")(Tamil)</h4>
+              <p>Anirudh Ravichander, T.Rajendar, Arivu</p>
+            </div>
+            <div class="card">
+              <div class="playbtn">
+                <img src="play_button.svg" alt="playbtn" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02f42805148e916145f858318b"
+                alt=""
+              />
+              <h4>Ishq Bawla|Coke Studio Bharat</h4>
+              <p>Dhanda Nyoliwala, Xvir Grewal</p>
+            </div>
+
+            <div class="card">
+              <div class="playbtn">
+                <img src="play_button.svg" alt="playbtn" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02f42805148e916145f858318b"
+                alt=""
+              />
+              <h4>Ishq Bawla|Coke Studio Bharat</h4>
+              <p>Dhanda Nyoliwala, Xvir Grewal</p>
+            </div>
+            <div class="card">
+              <div class="playbtn">
+                <img src="play_button.svg" alt="playbtn" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02f42805148e916145f858318b"
+                alt=""
+              />
+              <h4>Ishq Bawla|Coke Studio Bharat</h4>
+              <p>Dhanda Nyoliwala, Xvir Grewal</p>
+            </div>
+            <div class="card">
+              <div class="playbtn">
+                <img src="play_button.svg" alt="playbtn" />
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02f42805148e916145f858318b"
+                alt=""
+              />
+              <h4>Ishq Bawla|Coke Studio Bharat</h4>
+              <p>Dhanda Nyoliwala, Xvir Grewal</p>
+            </div>
+          </div>
+        </div>
+        <div class="Playbar">
+          <div class="seekbar">
+            <div class="progressbar"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="volume-control">
+            <label for="volume">🔊</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+          </div>
+
+          <div class="playbuttons">
+          <img class ="prev" src="prev.svg" alt="prev" />
+          <div class="playpause">
+            <img src="play.svg" alt="play" />
+          </div>
+          <img class ="next" src="next.svg" alt="next" />
+          </div>
+          <div class="nowplaying">Now playing: 0 of 0</div>
+
+          <div class="songinfo">
+
+          </div>
+          <div class="songtime">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
