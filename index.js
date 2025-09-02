@@ -1,6 +1,6 @@
 
 async function getsongs() {
-    let a = await fetch("Spotify-clone/songs.json");
+    let a = await fetch("songs.json");
     let songs = await a.json();  
     return songs;
 }
@@ -265,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 main();
+
 
 
 
