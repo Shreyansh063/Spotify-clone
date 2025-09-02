@@ -1,7 +1,7 @@
 
 async function getsongs() {
-    let a = await fetch("songs.json");
-    let response = await a.text();
+    let a = await fetch("./songs.json");
+    let response = await a.json();
     let div = document.createElement("div")
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
@@ -32,7 +32,7 @@ function secondsToMinutesSeconds(seconds){
 }
 
 const Playmusic=(track)=>{
-    audio.src = "/Spotify clone/Spotify songs/"+track;
+    audio.src = "Spotify songs/"+track;
     audio.play();    
 }
 
@@ -274,5 +274,6 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 main();
+
 
 
