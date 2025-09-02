@@ -22,7 +22,7 @@ function secondsToMinutesSeconds(seconds){
 }
 
 const Playmusic=(track)=>{
-    audio.src = "Spotify songs"+track;
+    audio.src = "/Spotify songs/"+track;
     audio.play();    
 }
 
@@ -33,11 +33,11 @@ async function main(){
 
     let songUl = document.querySelector(".songlist ul");
     for (const song of songs) {
-        const songName = song.split("/").pop();
+        
         songUl.innerHTML += `<li>
                 <img src="music.svg" alt="music" />
                 <div class="info">
-                  <div>${decodeURI(songName)}</div>
+                  <div>${decodeURI(song)}</div>
                   <div>Song artist</div>
                 </div>
                   <div class="playnow">
@@ -265,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 main();
+
 
 
 
