@@ -1,7 +1,17 @@
 
 async function getsongs() {
-    let a = await fetch("songs.json");
-    let songs = await a.json();  
+    let a = await fetch("Spotify-songs");
+    let response = await a.text();
+    let div = document.createElement("div")
+    div.innerHTML = response;
+    let as = div.getElementsByTagName("a");
+    let songs = []
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        if (element.href.endsWith(".mp3")) {
+            songs.push(element.href.split("/Spotify-songs/")[1]);
+        }
+    }
     return songs;
 }
 
@@ -22,7 +32,7 @@ function secondsToMinutesSeconds(seconds){
 }
 
 const Playmusic=(track)=>{
-    audio.src = `/Spotify-clone/Spotify-songs/${track}`;
+    audio.src = "/Spotify-clone/Spotify-songs/"+track;
     audio.play();    
 }
 
@@ -33,7 +43,6 @@ async function main(){
 
     let songUl = document.querySelector(".songlist ul");
     for (const song of songs) {
-        
         songUl.innerHTML += `<li>
                 <img src="music.svg" alt="music" />
                 <div class="info">
@@ -265,12 +274,6 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 main();
-
-
-
-
-
-
 
 
 
