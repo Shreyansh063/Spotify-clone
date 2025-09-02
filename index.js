@@ -22,7 +22,7 @@ function secondsToMinutesSeconds(seconds){
 }
 
 const Playmusic=(track)=>{
-    audio.src = track;
+    audio.src = encodeURI(track);
     audio.play();    
 }
 
@@ -265,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 main();
+
 
 
 
