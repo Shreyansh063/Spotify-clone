@@ -1,6 +1,6 @@
 
 async function getsongs() {
-    let a = await fetch("https://github.com/Shreyansh063/Spotify-clone/tree/main/Spotify%20songs");
+    let a = await fetch("songs.json");
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -274,4 +274,5 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 main();
+
 
